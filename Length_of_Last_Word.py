@@ -26,29 +26,11 @@ s consists of only English letters and spaces ' '.
 There will be at least one word in s.
 """
 
-# class Solution:
-#     def lengthOfLastWord(self, s: str) -> int:
-#         result=""
-#         for i in range(-1,-len(s)-1,-1):
-#             if s[i].isalpha():
-#                 result += s[i]
-#             else:
-#                 break
-#         return len(result)
-
-# obj= Solution()
-# print(obj.lengthOfLastWord("Hello World"))
-
-
-
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        word= s.split()
-        
-        for i in range(-1,-len(word)-1,-1):
-            return len(i)
-            
-            
+        return len(s.split()[-1])
 
-obj= Solution()
-print(obj.lengthOfLastWord("Hello World"))
+obj=Solution()
+print(obj.lengthOfLastWord("Hello World "))
+
+
