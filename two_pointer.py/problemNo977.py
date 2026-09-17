@@ -26,13 +26,6 @@ Output: [4,9,9,49,121]
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
         nums=[x**2 for x in nums]
-        new_nums=[]
-
-        i=0
-        j=len(nums)-1
-
-        while i<j:
-            if nums[i]<nums[j]:
                 
 
 obj=Solution()
